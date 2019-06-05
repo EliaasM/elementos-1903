@@ -15,10 +15,10 @@ import org.springframework.data.annotation.Id;
 public class Cliente {
     
     @Id
-    Integer id;
+    private Integer id;
     
-    String nombre;
-    String email;
+    private String nombre;
+    private String email;
 
     public Cliente(Integer id, String nombre, String email) {
         this.id = id;
@@ -53,6 +53,8 @@ public class Cliente {
     public void setEmail(String email) {
         this.email = email;
     }
+
+   
     
     
     
